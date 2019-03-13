@@ -30,15 +30,15 @@ class IndentBrackets extends Transform {
         }
 
         let indented = text.split('').map(c => {
-            if (c == '(' || c == '[') {
+            if (c == '(' || c == '[' || c == '{') {
                 c += '\n' + this._openIndent();
-            } else if (c == ')' || c == ']') {
+            } else if (c == ')' || c == ']' || c == '}') {
                 c = '\n' + this._closeIndent() + c + '\n' + this._currentIndent();
             }
             return c;
         }).join('');
 
-        this.push(indented);
+        callback(null, indented);
     }
 }
 

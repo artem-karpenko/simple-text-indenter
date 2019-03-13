@@ -1,8 +1,23 @@
 {
   "name": "indent-brackets",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-
-  }
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "should": "^13.2.3"
+  },
+  "author": {
+    "email": "gooyozh@gmail.com",
+    "name": "Artem Karpenko"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artem-karpenko/simple-text-indenter.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "indent",
+    "format",
+    "brackets"
+  ]
 }
